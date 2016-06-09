@@ -3,11 +3,15 @@ this is the new file !!
 
 thisi 88888888888888888
 
+n the new branch dev...
 
 this is my computer count first.....
 
 
-
-fix in the new branch dev...
+fix in the new branch dev..u.
 
 88888888888888888 master fix
+
+
+this is branchDev1, use for megre test
+>>>>>>> branceDev1
