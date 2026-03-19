@@ -70,3 +70,25 @@ Offending ECDSA key in /Users/amos/.ssh/known_hosts:33
 Host key for 10.168.168.9 has changed and you have requested strict checking.
 Host key verification failed.
 amos@AmosdeMacBook-Air ~ % 
+
+
+
+amos@AmosdeMacBook-Air ~ % ssh-keygen -R 10.168.168.9
+# Host 10.168.168.9 found: line 25
+# Host 10.168.168.9 found: line 32
+# Host 10.168.168.9 found: line 33
+/Users/amos/.ssh/known_hosts updated.
+Original contents retained as /Users/amos/.ssh/known_hosts.old
+amos@AmosdeMacBook-Air ~ % ssh -v soulog@10.168.168.9 
+OpenSSH_9.9p2, LibreSSL 3.3.6
+debug1: Reading configuration data /Users/amos/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/100-macos.conf
+debug1: /etc/ssh/ssh_config.d/100-macos.conf line 1: Applying options for *
+debug1: Reading configuration data /etc/ssh/crypto.conf
+debug1: Authenticator provider $SSH_SK_PROVIDER did not resolve; disabling
+debug1: Connecting to 10.168.168.9 [10.168.168.9] port 22.
+debug1: connect to address 10.168.168.9 port 22: Connection refused
+ssh: connect to host 10.168.168.9 port 22: Connection refused
+amos@AmosdeMacBook-Air ~ % 
+
